@@ -22,6 +22,9 @@ public class ProcessingThread extends Thread {
     public void run() {
         while(true){
             sendMessage(Constants.MESSAGE_STRING);
+            /*
+            sendMessage(Constants.MESSAGE_INTEGER);
+            sendMessage(Constants.MESSAGE_ARRAY_LIST);*/
             sleep();
             // log
             Log.d(Constants.TAG, "Thread.run() was invoked, PID: " +
